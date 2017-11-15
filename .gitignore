@@ -1,0 +1,10 @@
+/bin/
+.settings
+.classpath
+.project
+/build
+/META-INF
+/.settings
+.idea
+/target
+*.iml
