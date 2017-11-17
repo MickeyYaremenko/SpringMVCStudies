@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <html>
 <head>
@@ -15,11 +16,16 @@
 
     <fieldset class="boxBody">
 
-        <form:label path="name">Name:</form:label>
+        <span style="float: right">
+            <a href="?lang=en_US">en</a>
+            <a href="?lang=ru_RU">ru</a>
+        </span>
+
+        <form:label path="name"><spring:message code="label.user"/>: </form:label>
         <form:input path="name" />
         <form:errors path="name" cssClass="error"/>
 
-        <form:label path="password">Password:</form:label>
+        <form:label path="password"><spring:message code="label.password"/>:</form:label>
         <form:password path="password"/>
         <form:errors path="password" cssClass="error"/>
 

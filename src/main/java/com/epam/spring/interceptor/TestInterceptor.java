@@ -11,11 +11,11 @@ public class TestInterceptor extends HandlerInterceptorAdapter{
 
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-        if (request.getRequestURI().contains("check-user")){
-            User user = (User) modelAndView.getModel().get("user");
-            if (user == null || !user.getAdmin()){
-                response.sendRedirect(request.getContextPath() + "/failed");
-            }
-        }
+//        if (request.getRequestURI().contains("check-user")){
+//            User user = (User) modelAndView.getModel().get("user");
+//            if (user == null || !user.getAdmin()){
+//                response.sendRedirect(request.getContextPath() + "/failed");
+//            }
+//        }
     }
 }
