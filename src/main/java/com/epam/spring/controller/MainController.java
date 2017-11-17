@@ -22,7 +22,7 @@ import java.util.Map;
 
 @Controller
 @SessionAttributes("user")
-public class TestController {
+public class MainController {
 
     @Autowired
     private MessageSource messageSource;
